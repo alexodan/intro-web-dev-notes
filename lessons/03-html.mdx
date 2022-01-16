@@ -4,8 +4,6 @@ type: lesson
 number: '3'
 ---
 
-## HTML
-
 <b>HyperText Markup Language</b>, como dice el nombre (y en informatica
 practicamente todo esta en ingles asi que a acostumbrarse), es un lenguaje de
 marcado con el que le decimos a los navegadores web (Chrome, Firefox, Safari,
@@ -35,3 +33,43 @@ Al ser interpretado por un navegador se ve mas o menos asi:
   <li>Segundo item</li>
   <li>Tercer item</li>
 </ul>
+
+Como vemos en el ejemplo, HTML consiste en el uso de **etiquetas**, como por
+ejemplo `<p>`, cada etiqueta conlleva un significado semantico y cumple con una
+cierta funcion, por asi decirlo.
+
+La forma correcta de usar las etiquetas es (salvo contadas excepciones, como
+`<img/> o <input/>`) usando una etiqueta de apertura `<"alguna etiqueta">` y una
+de cierre `</"alguna etiqueta">`, por ejemplo:
+
+`<h1>Este es un uso correcto de la etiqueta h1, que denota un titulo principal.</h1>`
+
+`<h2>Este NO es uso correcto ya que no hay etiqueta de cierre`
+
+<pre style={{ color: 'black', fontWeight: 'bold' }}>
+  &lt;p&gt;Este TAMPOCO es correcto ya que abrimos con p y cerramos con la
+  etiqueta span&lt;/span&gt;
+</pre>
+
+Existen unas cuantas etiquetas, la siguiente lista no es exhaustiva, pero son
+algunas de uso mas frecuente:
+
+- &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt; se usan
+  para marcar titulos, h1 titulo principal, h2 subtitulos, h3 titulos de 3er
+  nivel y asi sucesivamente.
+- &lt;body&gt; aca vamos a poner el contenido visible de la pagina web.
+- &lt;header&gt; sirve para denotar el encabezado del sitio web.
+- &lt;footer&gt; sirve para denotar el pie de pagina del sitio web.
+- &lt;main&gt; para marcar el contenido principal del sitio.
+- &lt;p&gt; denota un parrafo,
+- &lt;span&gt; sirve de contenedor para un texto, se usa mucho para hacer
+  estilos, veremos mas adelante.
+- &lt;div&gt; se usa para separar en bloques las distintas secciones del sitio
+  web.
+- &lt;form&gt; para hacer formularios, este merece un apartado importante ya que
+  hay varias etiquetas relacionadas a los form, como `input`, `select`, etc.
+- &lt;input&gt; son esos cuadritos donde el usuario ingresa texto, puede ser
+  input de texto comun, de numeros, para mail, password, checkbox y radio aunque
+  capaz me olvido alguno.
+- &lt;button&gt; como dice el nombre, botoncitos, se usan para que el usuario
+  dispare alguna accion como imprimir algo o enviar un formulario o cosas asi.
