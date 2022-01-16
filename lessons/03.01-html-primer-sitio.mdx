@@ -4,6 +4,57 @@ type: lesson
 number: '3'
 ---
 
-Para que podamos empezar a desarrollar sitios web, debemos tener un editor de texto. Si bien uno tan basico como notepad (Windows) o gedit (Linux) nos puede servir, hay editores especializados para desarrolladores que nos dan muchisimas mas herramientas.
+Para que podamos empezar a desarrollar sitios web, debemos tener un editor de
+texto. Si bien uno tan basico como notepad (Windows) o gedit (Linux) nos puede
+servir, hay editores especializados para desarrolladores que nos dan muchisimas
+mas herramientas.
 
-Antes de pasar por el proceso de instalar uno, vamos primero a utilizar uno online, llamado <a href="https://codesandbox.io/">codesandbox</a>.
+Antes de pasar por el proceso de instalar uno, vamos primero a utilizar uno
+online, llamado <a href="https://codesandbox.io/">codesandbox</a>.
+
+Una vez en codesandbox en el rinconcito de arriba a la derecha hay un boton azul
+que dice "Create Sandbox", al darle clic aparece un menu con varias opciones:
+
+<img
+  src="https://res.cloudinary.com/intro-web-dev-notes/image/upload/v1642300348/sanbox-menu_sainiy.png"
+  alt=""
+/>
+
+Por ahora vamos a usar el que dice "static" y tiene el logo naranja de html5 (a
+todo esto estaria bueno que te crees una cuenta, eventualmente te lo va a pedir
+porque hay un limite).
+
+```html5
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Static Template</title>
+  </head>
+  <body>
+    <h1>This is a static template, there is no bundler or bundling involved!</h1>
+  </body>
+</html>
+```
+
+Una vez que carga nos encontramos con el entorno de desarrollo (IDE) de
+codesandbox, de a poco nos vamos a ir familiarizando con el menu, la barra
+lateral izquierda que son los archivos del proyecto, etcetera.
+
+Vemos que ya viene creado un archivo llamado `index.html`, esta nomenclatura de
+_index_ es muy frecuente, es como el punto de entrada de una pagina web o una
+aplicacion web. Otro detalle importante es la extension del archivo, en este
+caso ya que se trata de un archivo html, termina con la extension `.html`,
+posiblemente te suena de archivos como `.doc`, `.pdf`, `.exe`, etcetera.
+
+Primero nos vamos a concentrar en lo que hay dentro de la etiqueta `<body>`,
+hace la prueba y cambia el contenido del `<h1>` para que diga otra cosa en lugar
+de "This is a static template...". Vas a ver que al guardar el archivo (menu
+superior izquierdo, File > Save, o usando el atajo ctrl + s, altamente
+recomendable usar atajos) se va a actualizar la vista previa que nos da
+codesandbox en la parte derecha.
+
+Deberia quedar algo asi
+https://codesandbox.io/s/1-html-primer-sitio-ks4ry?file=/index.html
